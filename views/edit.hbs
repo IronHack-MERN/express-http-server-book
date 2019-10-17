@@ -1,0 +1,16 @@
+<h1>Actualiza un libro</h1>
+<form action="/books/{{_id}}" method="post">
+  <label for="">Title:</label>
+  <input type="text" name="title" value="{{title}}">
+
+  <label for="">Author:</label>
+  <input type="text" name="author" value="{{author}}">
+
+  <label for="">Description:</label>
+  <input type="text" name="description" value="{{description}}">
+
+  <label for="">Rate:</label>
+  <input type="number" name="rating" value="{{rating}}">
+
+  <button type="submit">UPDATE</button>
+</form>

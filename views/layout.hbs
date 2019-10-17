@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  {{#if currentUser }}
+  <p>name: {{ currentUser.username }}</p>
+  <a href="/logout">Logout</a>
+  {{else}}
+  <a href="/login">Login</a>
+  <a href="/signup">signup</a>
+  {{/if}}
+  {{{body}}}
+</body>
+
+</html>

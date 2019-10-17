@@ -1,0 +1,8 @@
+<h1>List Books</h1>
+<p>create un libro!!!!!!! {{ currentUser.username }}</p>
+<a href="/books/new">Añade un libro</button>
+  <ul>
+    {{#each books}}
+    <li><a href="/books/{{this._id}}">{{ this.title }} </a> </li>
+    {{/each}}
+  </ul>

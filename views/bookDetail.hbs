@@ -1,0 +1,11 @@
+<h1>{{ book.title }} <span>{{ book.author }}</span></h1>
+<p>{{ book.description }}</p>
+<p>
+  {{#each rating}}
+  <span>{{this}}</span>
+  {{/each}}
+</p>
+<a href="/books/{{book._id}}/update">Update</a>
+<form action="/books/{{book._id}}/delete" method="POST">
+  <input type="submit" value="delete">
+</form>
